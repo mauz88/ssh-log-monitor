@@ -1,0 +1,25 @@
+# SSH Log Monitor
+
+## Overview
+
+The SSH Log Monitor is a Python-based tool designed to parse and analyze SSH server logs. It helps detect suspicious activity, failed login attempts, and connection patterns by processing log files from your server.
+
+## Features
+
+- Parses SSH authentication logs to extract login attempts.
+- Summarizes failed and successful login sessions.
+- Provides timestamped event details for monitoring and auditing.
+- Easy to extend and customize for additional log formats or alerting.
+
+## Project Structure
+
+- `ssh_log_monitor.py`: Main Python script for parsing SSH logs.
+- `sample_ssh_log.log`: Sample SSH log file used for testing and development.
+- `README.md`: Project documentation and overview.
+
+## Usage
+
+1. Place your SSH log file in the project directory.
+2. Run the parser:
+   ```bash
+   python ssh_log_monitor.py sample_ssh_log.log
